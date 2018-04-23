@@ -177,7 +177,7 @@ public class ControlPanel extends View {
                 break;
             case MotionEvent.ACTION_MOVE:
                 int flag = getTouchFlag(event);
-                if (mMenuListener != null && flag != -1) {
+                if (mMenuListener != null) {
                     mMenuListener.onAnglePress(flag);
                 }
                 touchFlag = flag;
